@@ -2,14 +2,18 @@ body {
     background-image: url("../images/wood_background.png");
     background-size: 100%;
 }
-#maps{
-    position: relative;
-    height: 18%;
-    transform: rotate(-7deg);
-    top: 44px;
-    left: 220px;
+
+#title {
+    width: 70%;
+    margin: 0 auto;
 }
-#note8{
-    position: absolute;
+
+#note8 {
     transform: rotate(-7deg);
+}
+
+#clipBoard {
+    position: absolute;
+    transform: rotate(10deg);
+    width: 50%;
 }
