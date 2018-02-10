@@ -8,12 +8,10 @@ body {
     margin: 0 auto;
 }
 
-#note8 {
+#photo {
     transform: rotate(-7deg);
 }
 
 #clipBoard {
-    position: absolute;
     transform: rotate(10deg);
-    width: 50%;
 }
