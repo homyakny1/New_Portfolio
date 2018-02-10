@@ -1,0 +1,15 @@
+body {
+    background-image: url("../images/wood_background.png");
+    background-size: 100%;
+}
+#maps{
+    position: relative;
+    height: 18%;
+    transform: rotate(-7deg);
+    top: 44px;
+    left: 220px;
+}
+#note8{
+    position: absolute;
+    transform: rotate(-7deg);
+}
