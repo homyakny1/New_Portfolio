@@ -1,3 +1,6 @@
+.container{
+	width:100%;
+}
 body {
     background-image: url("../images/wood_background.png");
     background-size: 100%;
@@ -9,11 +12,32 @@ body {
 }
 
 #photo {
+    margin-left: 25%;
     width: 95%;
     transform: rotate(-8deg);
 }
-
+#key{
+    width: 18%;
+    margin-top: -10%;
+    margin-left: 60%;
+    transform: rotate(28deg);
+}
+#pen{
+    margin-top: -10%;
+    margin-left: 60%;
+    width: 10%;
+    transform: rotate(-28deg);
+}
 #clipBoard {
     transform: rotate(10deg);
     width: 90%;
+    margin-left: -15%;
+}
+#iPad{
+    width: 75%;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 500px) {
+    #key{
+    }
 }
