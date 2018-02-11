@@ -9,6 +9,7 @@ body {
 }
 
 #photo {
+    width: 95%;
     transform: rotate(-8deg);
 }
 
