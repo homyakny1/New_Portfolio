@@ -8,29 +8,52 @@ body {
     margin: 0 auto;
 }
 
-#photo {
-    margin-left: -25%;
-    width: 95%;
-    transform: rotate(8deg);
-}
-#key{
-    width: 18%;
-    margin-top: -10%;
-    transform: rotate(28deg);
-}
-#plant{
-    margin-top: -7%;
-}
 #clipBoard {
     transform: rotate(-10deg);
     width: 90%;
     margin-left: 15%;
 }
-#iPad{
+
+#text {
+    position: absolute;
+    margin-top: -89%;
+    width: 59%;
+    margin-left: 35%;
+    transform: rotate(-9.5deg);
+    font-family: 'Great Vibes', Helvetica, sans-serif;
+    font-size: 27px;
+}
+
+#photo {
+    margin-left: -25%;
+    width: 95%;
+    transform: rotate(8deg);
+}
+
+#key {
+    width: 50%;
+}
+
+#plant {
+    margin-top: -10%;
+    margin-left: 10%;
+}
+
+
+#iPad {
     margin: 0 auto;
     margin-top: 5%;
 }
-@media only screen and (max-width: 500px) {
-    #key{
+
+@media only screen and (max-width: 1200px) {
+    #text {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #text {
+        font-size: 17px;
+        width: 57%;
     }
 }
