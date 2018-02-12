@@ -57,3 +57,9 @@ body {
         width: 57%;
     }
 }
+@media only screen and (max-width: 768px) {
+    #text {
+        font-size: 100%;
+        width: 55%;
+    }
+}
