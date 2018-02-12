@@ -34,14 +34,13 @@ body {
 #key {
     width: 50%;
     margin-top: 90%;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 #plant {
     margin-top: -10%;
     margin-left: 10%;
 }
-
 
 #iPad {
     margin: 0 auto;
@@ -60,9 +59,34 @@ body {
         width: 57%;
     }
 }
+
 @media only screen and (max-width: 768px) {
+    #photo {
+        margin-left: 52%;
+        width: 51%;
+        transform: rotate(8deg);
+    }
+    #clipBoard {
+        margin-top: -43%;
+        transform: rotate(-10deg);
+        width: 70%;
+        margin-left: 0%;
+    }
     #text {
-        font-size: 100%;
-        width: 55%;
+        margin-left: 55px;
+        font-size: 76%;
+        width: 43%;
+        margin-top: -66%;
+    }
+    #key {
+        margin-left: 73%;
+        width: 24%;
+        margin-top: -49%;
+        cursor: pointer;
+    }
+    #plant {
+        width: 37%;
+        margin-top: 2%;
+        margin-left: 63%;
     }
 }
