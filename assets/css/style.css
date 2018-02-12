@@ -9,6 +9,7 @@ body {
 }
 
 #clipBoard {
+    margin-top: -60%;
     transform: rotate(-10deg);
     width: 90%;
     margin-left: 15%;
@@ -25,13 +26,14 @@ body {
 }
 
 #photo {
-    margin-left: -25%;
-    width: 95%;
+    margin-left: 90%;
+    width: 75%;
     transform: rotate(8deg);
 }
 
 #key {
     width: 50%;
+    margin-top: 90%;
 }
 
 #plant {
