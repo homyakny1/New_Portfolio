@@ -1,1 +1,5 @@
-console.log("this is me")
+var x = document.getElementById("keySound"); 
+
+function playAudio() { 
+    x.play(); 
+} 
