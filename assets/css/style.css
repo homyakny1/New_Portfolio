@@ -41,11 +41,25 @@ body {
     margin-top: -10%;
     margin-left: 10%;
 }
-
-#iPad {
-    margin: 0 auto;
-    margin-top: 5%;
+#wallpaper{
+    margin-top: 8%;
+    width: 54%;
+    margin-left: 59%;
+    transform: rotate(-5deg);
 }
+#note8{
+    margin-left: 58%;
+    width: 56%;
+    margin-top: -117%;
+    transform: rotate(-5deg);
+}
+#mx2{
+    transform: rotate(25deg);
+    width: 40%;
+    margin-left: 22%;
+}
+
+
 
 @media only screen and (max-width: 1200px) {
     #text {
