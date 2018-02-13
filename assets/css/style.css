@@ -41,25 +41,33 @@ body {
     margin-top: -10%;
     margin-left: 10%;
 }
-#wallpaper{
-    margin-top: 8%;
-    width: 54%;
-    margin-left: 59%;
-    transform: rotate(-5deg);
+
+#wallpaper {
+    margin-top: 4%;
+    width: 42%;
+    margin-left: 12%;
+    transform: rotate(-25deg);
 }
-#note8{
-    margin-left: 58%;
-    width: 56%;
-    margin-top: -117%;
-    transform: rotate(-5deg);
+
+#note8 {
+    margin-left: 9%;
+    width: 49%;
+    margin-top: -94%;
+    transform: rotate(-25deg);
 }
-#mx2{
+
+#mx2 {
     transform: rotate(25deg);
     width: 40%;
     margin-left: 22%;
+    cursor: pointer;
 }
 
-
+#paper{
+    width: 43%;
+    margin-left: 64%;
+    margin-top: -17%;
+}
 
 @media only screen and (max-width: 1200px) {
     #text {
@@ -102,5 +110,28 @@ body {
         width: 37%;
         margin-top: 2%;
         margin-left: 60%;
+    }
+    #paper {
+        width: 24%;
+        margin-left: 30%;
+        margin-top: -17%;
+    }
+    #mx2 {
+        transform: rotate(25deg);
+        width: 24%;
+        margin-left: 8%;
+        cursor: pointer;
+    }
+    #note8 {
+        margin-left: 56%;
+        width: 28%;
+        margin-top: -55%;
+        transform: rotate(-25deg);
+    }
+    #wallpaper {
+        margin-top: -42%;
+        width: 24%;
+        margin-left: 58%;
+        transform: rotate(-25deg);
     }
 }

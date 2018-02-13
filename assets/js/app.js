@@ -1,5 +1,11 @@
-var x = document.getElementById("keySound"); 
+var key = document.getElementById("keySound"); 
 
-function playAudio() { 
-    x.play(); 
+function playKey() { 
+    key.play(); 
+} 
+
+var click = document.getElementById("clickSound"); 
+
+function playClick() { 
+    click.play(); 
 } 
