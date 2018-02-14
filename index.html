@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114152092-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-114152092-1');
+    </script>
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -37,7 +47,6 @@
                 </div>
             </div>
             <div class="col-sm-5">
-                <!-- <img id="photo" src="assets/images/Photo.png" class="img-responsive" alt="Responsive image"> -->
                 <img id="key" src="assets/images/Key.png" class="img-responsive" alt="Infiniti Key" onclick="playKey()">
                 <audio id="keySound">
                     <source src="assets/sound/keySound.wav" type="audio/wav">
@@ -47,23 +56,21 @@
         </div>
         <div class="row">
             <div class="col-sm-6">
+                <img id="hamster" src="assets/images/hamster1.png" class="img-responsive" alt="Hamster">
                 <img id="mx2" src="assets/images/mx2.png" class="img-responsive" alt="MX2" onclick="playClick()">
                 <audio id="clickSound">
                     <source src="assets/sound/clickSound.wav" type="audio/wav">
                 </audio>
-                <img id="paper" src="assets/images/paper.png" class="img-responsive" alt="Paper">
             </div>
             <div class="col-sm-6">
                 <video id="wallpaper" autoplay loop muted>
                     <source src="assets/images/live_note8.mp4" type="video/mp4">
                 </video>
                 <img id="note8" src="assets/images/note8.png" class="img-responsive" alt="Note 8">
+
             </div>
         </div>
     </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="assets/js/app.js"></script>
