@@ -70,9 +70,39 @@ body {
     margin-left: 50%;
 }
 
+#icon_div{
+    width: 36%;
+    margin-top: -64%;
+    transform: rotate(-25deg);
+    margin-left: 19%;
+}
+
+.icons{
+    width: 39%;
+    margin-left: 10%;
+    margin-top: 10%;
+    border-radius:25%;
+    cursor: pointer;
+    opacity: 0.9
+}
+
 @media only screen and (max-width: 1200px) {
     #text {
         font-size: 22px;
+    }
+    #icon_div {
+        width: 38%;
+        margin-top: -65%;
+        transform: rotate(-25deg);
+        margin-left: 18%;
+    }
+    .icons {
+        width: 38%;
+        margin-left: 10%;
+        margin-top: 10%;
+        border-radius: 25%;
+        cursor: pointer;
+        opacity: 0.9;
     }
 }
 
@@ -83,7 +113,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 769px) {
     #photo {
         margin-left: 49%;
         width: 50%;
@@ -135,4 +165,20 @@ body {
         margin-left: 58%;
         transform: rotate(-25deg);
     }
+    #icon_div {
+        width: 22%;
+        margin-top: -37%;
+        transform: rotate(-25deg);
+        margin-left: 61%;
+    }
+}
+@media only screen and (max-width: 485px) {
+    #icon_div {
+        width: 23%;
+        margin-top: -39%;
+        transform: rotate(-25deg);
+        margin-left: 60%;
+    }
+    .icons {
+        width: 36%;}
 }
