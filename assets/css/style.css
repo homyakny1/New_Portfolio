@@ -85,6 +85,19 @@ body {
     opacity: 0.9
 }
 
+#iPad{
+    position: relative;
+    margin-top: 10%;
+    width: 100%;
+}
+
+#myCanvas{
+    margin-left: 10.5%;
+    margin-top: -65%;
+    width: 79%;
+    height: 75%;
+}
+
 @media only screen and (max-width: 1200px) {
     #text {
         font-size: 22px;
