@@ -18,11 +18,11 @@ body {
 #text {
     position: absolute;
     margin-top: -89%;
-    width: 59%;
-    margin-left: 35%;
+    width: 55%;
+    margin-left: 32%;
     transform: rotate(-9.5deg);
     font-family: 'Great Vibes', Helvetica, sans-serif;
-    font-size: 27px;
+    font-size: 2.2vw;
 }
 
 #photo {
@@ -87,7 +87,6 @@ body {
 
 #iPad{
     position: relative;
-    margin-top: 10%;
     width: 100%;
 }
 
@@ -97,11 +96,12 @@ body {
     width: 79%;
     height: 75%;
 }
+#contactRow{
+    margin-top: 8vh;
+}
 
 @media only screen and (max-width: 1200px) {
-    #text {
-        font-size: 22px;
-    }
+    
     #icon_div {
         width: 38%;
         margin-top: -65%;
@@ -119,10 +119,7 @@ body {
 }
 
 @media only screen and (max-width: 991px) {
-    #text {
-        font-size: 17px;
-        width: 57%;
-    }
+    
 }
 
 @media only screen and (max-width: 767px) {
@@ -139,7 +136,7 @@ body {
     }
     #text {
         margin-left: 15vw;
-        font-size: 2.8vw;
+        font-size: 3.8vw;
         width: 42%;
         margin-top: -65vw;
     }
