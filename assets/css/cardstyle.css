@@ -35,7 +35,7 @@ figure.snip1166 figcaption {
 }
 
 figure.snip1166 figcaption>div {
-  height: 70%;
+  height: 80%;
   overflow: hidden;
   width: 100%;
   position: absolute;
@@ -51,7 +51,7 @@ figure.snip1166 p {
 
 figure.snip1166 h3 {
   margin-top: -8vw;
-  font-size: 4vw;
+  font-size: 3vw;
   padding: 0px 3vw 0 1.5vw;
   color: #ffffff;
   background-color: #1a1a1a;
