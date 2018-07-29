@@ -250,7 +250,7 @@ a:hover {
     background: rgba(255, 255, 255, .1)
 }
 
-.partfolio-row {
+.portfolio-row {
     padding-top: 0% !important;
 }
 
@@ -284,7 +284,7 @@ a:hover {
 }
 
 @media (min-width:992px) {
-    .partfolio-row {
+    .portfolio-row {
         padding-top: 0vh !important;
     }
     .content-section {
