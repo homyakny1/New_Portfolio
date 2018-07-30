@@ -8,9 +8,16 @@ ul.subnav {
     list-style: none;
 }
 
-.contact-btn{
+.contact-btn {
     width: 200px;
 }
+
+/* #k-flip {
+    width: 16px;
+    position: absolute;
+    margin-top: 1px;
+    transform: rotate(-180deg);
+} */
 
 .subnav {
     font-family: Cabin, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -333,12 +340,14 @@ a:hover {
 }
 
 ul.banner-social-buttons {
-    margin-top: 0
+    margin-top: 0;
+    margin-right: 0 !important;
 }
 
 @media (max-width:1199px) {
     ul.banner-social-buttons {
-        margin-top: 15px
+        margin-top: 15px;
+        margin-right: 0 !important;
     }
 }
 
@@ -355,10 +364,12 @@ ul.banner-social-buttons {
     ul.banner-social-buttons li {
         display: block;
         margin-bottom: 20px;
-        padding: 0
+        padding: 0;
+        margin-right: 0 !important;
     }
     ul.banner-social-buttons li:last-child {
-        margin-bottom: 0
+        margin-bottom: 0;
+        margin-right: 0 !important;
     }
 }
 
