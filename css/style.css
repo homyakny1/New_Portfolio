@@ -246,7 +246,7 @@ a:hover {
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
     color: #fff;
-    border: 2px solid #fff;
+    border: 2px solid rgb(255, 255, 255);
     background: 0 0
 }
 
@@ -322,8 +322,8 @@ a:hover {
 }
 
 .btn-default {
-    color: #42DCA3;
-    border: 1px solid #42DCA3
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255)
 }
 
 .btn-school {
@@ -334,9 +334,9 @@ a:hover {
 .btn-default:focus,
 .btn-default:hover {
     color: #000;
-    border: 1px solid #42DCA3;
+    border: 1px solid rgb(172, 172, 172);
     outline: 0;
-    background-color: #42DCA3
+    background-color: rgba(179, 179, 179, 0.5)
 }
 
 ul.banner-social-buttons {

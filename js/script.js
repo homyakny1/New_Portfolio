@@ -31,7 +31,7 @@
 })(jQuery)
 
 var heading = document.getElementById("typing");
-var data = ["Hi, I'm Eugene","I'm a front end web developer","Feel free to explore my web site"];
+var data = ["Hi, I'm Eugene","I'm a front end web developer","Feel free to explore my website"];
 var j = 0;
 var i = 0;
 
