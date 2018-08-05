@@ -73,3 +73,13 @@ var time = setTimeout(del, 100);
 }
 
 typing();
+
+$('#HSbutton').click(function(){
+    if($('#HSbutton').text()==='Hide'){
+        $(this).text('Show');
+        $('.subnav').fadeOut()
+    } else {
+        $(this).text('Hide');
+        $('.subnav').fadeIn()
+    }
+});
