@@ -1,5 +1,6 @@
 body,
-html {
+html,
+#page-top {
     height: 100%;
     width: 100%;
 }
@@ -11,13 +12,6 @@ ul.subnav {
 .contact-btn {
     width: 200px;
 }
-
-/* #k-flip {
-    width: 16px;
-    position: absolute;
-    margin-top: 1px;
-    transform: rotate(-180deg);
-} */
 
 .subnav {
     font-family: Cabin, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -33,9 +27,9 @@ ul.subnav {
     text-align: right;
 }
 
-#HSbutton{
+#HSbutton {
     position: fixed;
-    right:  0;
+    right: 0;
     top: 50%;
     width: 60px;
 }
@@ -414,4 +408,51 @@ img::-moz-selection {
     .ser-img {
         width: 8vh
     }
+}
+
+#lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 140px;
+    height: 140px;
+    text-align: center;
+    Left: 50%;
+    top: 50%;
+    margin-left:-70px;
+    margin-top:-70px;
+}
+
+#lds-ripple div {
+    position: absolute;
+    border: 8px solid #fff;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+#lds-ripple div:nth-child(2) {
+    animation-delay: -1s;
+}
+
+@keyframes lds-ripple {
+    0% {
+        top: 70px;
+        left: 70px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+        border-color: aqua;
+    }
+    100% {
+        top: -1px;
+        left: -1px;
+        width: 140px;
+        height: 140px;
+        opacity: 0;
+        border-color: darkblue;
+    }
+}
+
+#page-top{
+    display: none;
 }

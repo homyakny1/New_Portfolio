@@ -30,8 +30,21 @@
     $(window).scroll(navbarCollapse)
 })(jQuery)
 
+Loading();
+
+var loading;
+
+function Loading(){
+    loading = setTimeout(showMainPage, 4000);
+}
+
+function showMainPage(){
+    document.getElementById("lds-ripple").style.display = "none";
+    document.getElementById("page-top").style.display = "block";
+}
+
 var heading = document.getElementById("typing");
-var data = ["Hi, I'm Eugene","I'm a front end web developer","Feel free to explore my website"];
+var data = ["Feel free to explore my website", "Hi, I'm Eugene","I'm a front end web developer"];
 var j = 0;
 var i = 0;
 
@@ -83,3 +96,4 @@ $('#HSbutton').click(function(){
         $('.subnav').fadeIn()
     }
 });
+
