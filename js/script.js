@@ -1,3 +1,4 @@
+// Smooth scrolling function
 (function ($) {
     "use strict";
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
@@ -30,13 +31,11 @@
     $(window).scroll(navbarCollapse)
 })(jQuery)
 
-
+// Typing Function
 var heading = document.getElementById("typing");
 var data = ["Hi, I'm Eugene", "I'm a front end web developer", "Feel free to explore my website"];
 var j = 0;
 var i = 0;
-
-
 var k;
 
 function typing() {
@@ -59,8 +58,6 @@ function typing() {
     }
 }
 
-// var check = document.getElementById("check");
-// var k = 0;
 function del() {
     if (heading.innerHTML.length == 0) {
         clearTimeout(time);
@@ -70,9 +67,9 @@ function del() {
         var time = setTimeout(del, 100);
     }
 }
-
 typing();
 
+// Hide Sabnuv Button Function
 $('#HSbutton').click(function () {
     if ($('#HSbutton').text() === 'Hide') {
         $(this).text('Show');
