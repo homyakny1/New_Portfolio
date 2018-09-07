@@ -79,3 +79,59 @@ $('#HSbutton').click(function () {
         $('.subnav').fadeIn()
     }
 });
+
+// Initialize Firebase
+
+var config = {
+    apiKey: "AIzaSyDUrFH9ecZi-RG8115pd-2CO18QB-ZsDBE",
+    authDomain: "contactform-3914e.firebaseapp.com",
+    databaseURL: "https://contactform-3914e.firebaseio.com",
+    projectId: "contactform-3914e",
+    storageBucket: "contactform-3914e.appspot.com",
+    messagingSenderId: "188783074347"
+};
+firebase.initializeApp(config);
+
+//Reference message collection
+
+var messageRef = firebase.database().ref('messages');
+
+// Listen for form submit 
+
+document.getElementById('contactForm').addEventListener('submit', submitForm);
+
+// Submit form
+function submitForm(e) {
+    e.preventDefault();
+
+    // Get values
+
+    var name = getInputVal('name');
+    var email = getInputVal('email');
+    var message = getInputVal('message');
+
+    // Save message 
+
+    saveMessage(name, email, message);
+
+    // Clear form 
+
+    document.getElementById('contactForm').reset();
+}
+
+// Function to get form values
+
+function getInputVal(id) {
+    return document.getElementById(id).value;
+}
+
+// Save message to firebase 
+
+function saveMessage(name, email, message) {
+    var newMessageRef = messageRef.push();
+    newMessageRef.set({
+        name: name,
+        email: email,
+        message: message
+    });
+}

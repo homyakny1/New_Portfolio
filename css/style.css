@@ -105,8 +105,8 @@ h6 {
     box-shadow: 0 14px 20px rgba(0, 0, 0, .10), 0 10px 10px rgba(0, 0, 0, 0.10);
 }
 
-p {
-    font-size: 18px;
+p,#contactForm {
+    font-size: 20px;
     line-height: 1.5;
     margin: 0 0 25px;
     font-family: Sintony, sans-serif
@@ -273,7 +273,7 @@ a:hover {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover
 }
 
 .school-section {
@@ -408,4 +408,18 @@ img::-moz-selection {
     .ser-img {
         width: 8vh
     }
+}
+
+.form-control{
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 0;
+    margin-bottom: 10px;
+    margin-top: 16px;
+    color: white;
+}
+
+.list-inline-item{
+    margin-right: 0 !important;
+    margin-bottom: 2vw;
 }
