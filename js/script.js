@@ -114,6 +114,15 @@ function submitForm(e) {
 
     saveMessage(name, email, message);
 
+    //Show Alert
+
+    document.getElementById('alert').style.display = 'block';
+
+    //Hide Alert
+    setTimeout(function () {
+        document.getElementById('alert').style.display = 'none';
+    }, 3000)
+
     // Clear form 
 
     document.getElementById('contactForm').reset();

@@ -423,3 +423,7 @@ img::-moz-selection {
     margin-right: 0 !important;
     margin-bottom: 2vw;
 }
+
+#alert{
+    display: none;
+}
