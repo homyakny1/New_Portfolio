@@ -13,6 +13,10 @@ ul.subnav {
     width: 200px;
 }
 
+.btn-group-lg>.btn, .btn-lg {
+    padding: 5px;
+}
+
 .subnav {
     font-family: Cabin, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 700;
@@ -31,7 +35,9 @@ ul.subnav {
     position: fixed;
     right: 0;
     top: 50%;
-    width: 60px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50px 0 0 50px;
 }
 
 ul,
@@ -264,7 +270,7 @@ a:hover {
 
 .content-section {
     padding-top: 15%;
-    padding-bottom: 15%
+    padding-bottom: 15%;
 }
 
 .about-section {
@@ -296,8 +302,8 @@ a:hover {
         padding-top: 0vh !important;
     }
     .content-section {
-        padding-top: 28vh;
-        padding-bottom: 28vh;
+        padding-top: 10vw;
+        padding-bottom: 10vw;
     }
     .gallery-section {
         padding-top: 130px !important;
