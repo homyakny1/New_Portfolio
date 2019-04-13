@@ -13,7 +13,8 @@ ul.subnav {
     width: 200px;
 }
 
-.btn-group-lg>.btn, .btn-lg {
+.btn-group-lg>.btn,
+.btn-lg {
     padding: 5px;
 }
 
@@ -111,7 +112,8 @@ h6 {
     box-shadow: 0 14px 20px rgba(0, 0, 0, .10), 0 10px 10px rgba(0, 0, 0, 0.10);
 }
 
-p,#contactForm {
+p,
+#contactForm {
     font-size: 20px;
     line-height: 1.5;
     margin: 0 0 25px;
@@ -190,16 +192,19 @@ a:hover {
         border-bottom: none;
         background: 0 0
     }
+
     #mainNav.navbar-shrink {
         padding-top: 10px;
         padding-bottom: 10px;
         border-bottom: 1px solid rgba(255, 255, 255, .3);
         background: #000
     }
+
     #mainNav .nav-link.active {
         outline: 0;
         background-color: rgba(255, 255, 255, .3)
     }
+
     #mainNav .nav-link.active:hover {
         color: rgba(255, 255, 255, 0.755)
     }
@@ -226,6 +231,9 @@ a:hover {
 .masthead .intro-body .brand-heading {
     font-size: 50px
 }
+.capital{
+    font-size: 60px;
+}
 
 .masthead .intro-body .intro-text {
     font-size: 18px
@@ -236,9 +244,11 @@ a:hover {
         height: 100%;
         padding: 0
     }
+
     .masthead .intro-body .brand-heading {
-        font-size: 100px
+        font-size: 50px
     }
+
     .masthead .intro-body .intro-text {
         font-size: 22px
     }
@@ -301,10 +311,12 @@ a:hover {
     .portfolio-row {
         padding-top: 0vh !important;
     }
+
     .content-section {
         padding-top: 10vw;
         padding-bottom: 10vw;
     }
+
     .gallery-section {
         padding-top: 130px !important;
     }
@@ -368,12 +380,13 @@ ul.banner-social-buttons {
         background-size: cover;
         box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .40)
     }
+
     ul.banner-social-buttons li {
         display: block;
-        margin-bottom: 20px;
         padding: 0;
         margin-right: 0 !important;
     }
+
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
         margin-right: 0 !important;
@@ -416,7 +429,7 @@ img::-moz-selection {
     }
 }
 
-.form-control{
+.form-control {
     background-color: transparent;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 0;
@@ -425,11 +438,11 @@ img::-moz-selection {
     color: white;
 }
 
-.list-inline-item{
+.list-inline-item {
     margin-right: 0 !important;
     margin-bottom: 2vw;
 }
 
-#alert{
+#alert {
     display: none;
 }

@@ -31,9 +31,31 @@
     $(window).scroll(navbarCollapse)
 })(jQuery)
 
+var time = new Date().getHours();
+
+var data = [];
+
+if (time >= 0 && time < 5) {
+    data.push("Well it's getting kind of late", "Shouldn't you be sleeping by now?", "I think you really like me if you here this late");
+};
+
+if (time >= 5 && time < 10) {
+    data.push('Good Morning', 'What a good day today', "Go make some coffee", "Let's get this day going");
+};
+
+if (time >= 10 && time < 12) {
+    data.push('Good Morning', 'Glad to see you here', 'Feel free to explore my website');
+};
+
+if (time >= 12 && time < 17) {
+    data.push('Good Afternoon', 'Glad to see you here', 'Feel free to explore my website');
+};
+if (time >= 17 && time < 24) {
+    data.push('Good Evening', 'Glad to see you here', 'Feel free to explore my website');
+}
+
 // Typing Function
 var heading = document.getElementById("typing");
-var data = ["Hi, I'm Eugene", "I'm a front end web developer", "Feel free to explore my website"];
 var j = 0;
 var i = 0;
 var k;
@@ -46,7 +68,7 @@ function typing() {
     if (i < data[j].length) {
         heading.innerHTML += data[j].charAt(i);
         i++;
-        setTimeout(typing, 50);
+        setTimeout(typing, 70);
     } else {
         j++;
         i = 0;
@@ -79,68 +101,3 @@ $('#HSbutton').click(function () {
         $('.subnav').fadeIn()
     }
 });
-
-// Initialize Firebase
-
-var config = {
-    apiKey: "AIzaSyDUrFH9ecZi-RG8115pd-2CO18QB-ZsDBE",
-    authDomain: "contactform-3914e.firebaseapp.com",
-    databaseURL: "https://contactform-3914e.firebaseio.com",
-    projectId: "contactform-3914e",
-    storageBucket: "contactform-3914e.appspot.com",
-    messagingSenderId: "188783074347"
-};
-firebase.initializeApp(config);
-
-//Reference message collection
-
-var messageRef = firebase.database().ref('messages');
-
-// Listen for form submit 
-
-document.getElementById('contactForm').addEventListener('submit', submitForm);
-
-// Submit form
-function submitForm(e) {
-    e.preventDefault();
-
-    // Get values
-
-    var name = getInputVal('name');
-    var email = getInputVal('email');
-    var message = getInputVal('message');
-
-    // Save message 
-
-    saveMessage(name, email, message);
-
-    //Show Alert
-
-    document.getElementById('alert').style.display = 'block';
-
-    //Hide Alert
-    setTimeout(function () {
-        document.getElementById('alert').style.display = 'none';
-    }, 3000)
-
-    // Clear form 
-
-    document.getElementById('contactForm').reset();
-}
-
-// Function to get form values
-
-function getInputVal(id) {
-    return document.getElementById(id).value;
-}
-
-// Save message to firebase 
-
-function saveMessage(name, email, message) {
-    var newMessageRef = messageRef.push();
-    newMessageRef.set({
-        name: name,
-        email: email,
-        message: message
-    });
-}
