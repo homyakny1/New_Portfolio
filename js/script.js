@@ -68,7 +68,7 @@ function typing() {
     if (i < data[j].length) {
         heading.innerHTML += data[j].charAt(i);
         i++;
-        setTimeout(typing, 70);
+        setTimeout(typing, 80);
     } else {
         j++;
         i = 0;
