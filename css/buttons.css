@@ -1,0 +1,195 @@
+.container {
+    margin: 0 auto;
+    padding: 5em 3em;
+}
+
+body {
+    font-family: Lora, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: relative;
+    background: url(../img/ep_naturalblack.png);
+    font-family: Cabin, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.effect-heading {
+    margin-bottom: 50px;
+    color: white;
+}
+
+.btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.btn {
+    border: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    background: #333;
+    font-weight: bold;
+    width: 200px;
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+}
+
+/* Slide from left effect */
+
+.slide-left:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    height: 120%;
+    width: 200%;
+    background-image: linear-gradient(to right, green, rgba(0, 0, 0, 0));
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(-100%) translateY(-81%) rotate(0deg);
+    transform: translateX(-100%) translateY(-20%) rotate(0deg);
+}
+
+.slide-left:hover:after {
+    -webkit-transform: translateX(0%) translateY(-20%) rotate(0deg);
+    transform: translateX(0%) translateY(-20%) rotate(0deg);
+}
+
+/* Slide from right effect */
+
+.slide-right:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    height: 120%;
+    width: 200%;
+    background-image: linear-gradient(to right, red, rgba(0, 0, 0, 0));
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(-100%) translateY(-81%) rotate(0deg);
+    transform: translateX(50%) translateY(-20%) rotate(180deg);
+}
+
+.slide-right:hover:after {
+    -webkit-transform: translateX(-50%) translateY(-20%) rotate(180deg);
+    transform: translateX(-50%) translateY(-20%) rotate(180deg);
+}
+
+/* Slide from top effect */
+
+.slide-top:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    height: 200%;
+    width: 100%;
+    background-image: linear-gradient(blue, rgba(0, 0, 0, 0));
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(0%) translateY(-120%) rotate(0deg);
+}
+
+.slide-top:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(0%) translateY(-10%) rotate(0deg);
+}
+
+/* Slide from down effect */
+
+.slide-down:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    height: 200%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), yellow);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(0%) translateY(50%) rotate(0deg);
+}
+
+.slide-down:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(0%) translateY(-30%) rotate(0deg);
+}
+
+/* Slide from top left effect */
+
+.top-left:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    height: 600%;
+    width: 50%;
+    background-image: linear-gradient(to right, green, rgba(0, 0, 0, 0));
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(-100%) translateY(-81%) rotate(0deg);
+    transform: translateX(-100%) translateY(-81%) rotate(0deg);
+}
+
+.top-left:hover:after {
+    -webkit-transform: translateX(50%) translateY(-40%) rotate(90deg);
+    transform: translateX(50%) translateY(-40%) rotate(90deg);
+}
+
+/* Slide from down left effect */
+
+.down-left:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    height: 600%;
+    width: 50%;
+    background-image: linear-gradient(to right, red, rgba(0, 0, 0, 0));
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(-100%) translateY(-81%) rotate(0deg);
+    transform: translateX(-100%) translateY(10%) rotate(0deg);
+}
+
+.down-left:hover:after {
+    -webkit-transform: translateX(50%) translateY(-40%) rotate(90deg);
+    transform: translateX(50%) translateY(-50%) rotate(-90deg);
+}
+
+/* Slide from top right effect */
+
+.top-right:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    height: 600%;
+    width: 50%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), blue);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(200%) translateY(-30%) rotate(0deg);
+    transform: translateX(200%) translateY(-100%) rotate(0deg);
+}
+
+.top-right:hover:after {
+    -webkit-transform: translateX(50%) translateY(-50%) rotate(90deg);
+    transform: translateX(50%) translateY(-40%) rotate(-90deg);
+}
+
+/* Slide from down right effect */
+
+.down-right:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    height: 600%;
+    width: 50%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), yellow);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(200%) translateY(-30%) rotate(0deg);
+    transform: translateX(200%) translateY(-30%) rotate(0deg);
+}
+
+.down-right:hover:after {
+    -webkit-transform: translateX(50%) translateY(-50%) rotate(90deg);
+    transform: translateX(50%) translateY(-50%) rotate(90deg);
+}
